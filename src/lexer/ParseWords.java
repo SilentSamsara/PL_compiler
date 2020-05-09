@@ -72,7 +72,7 @@ public class ParseWords {
 			}else
 				matched = matched + key;
 		}
-		SymbolTable.wordItemList.add(new WordItem(matched,133 , line));
+		SymbolTable.wordItemList.add(new WordItem(matched,search("字符串") , line));
 		return true;
 	}
 	
@@ -118,7 +118,6 @@ public class ParseWords {
 				else if(key == '"'){
 					//识别字符串
 					if (!matchString()) {
-						System.out.println("转译错误:line:"+line+" key:"+key);
 						ErrorWriter.addError("转译错误", line, ""+key);
 					}
 					key = (char) reader.read();

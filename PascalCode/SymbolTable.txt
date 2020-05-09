@@ -12,6 +12,11 @@ s				Id
 :				Mao
 integer				INTEGER
 ;				Over
+var				Var
+e				Id
+:				Mao
+string				Id
+;				Over
 begin				Start
 a				Id
 :=				VL
@@ -29,6 +34,9 @@ d				Id
 :=				VL
 整数				num				255
 ;				Over
+e				Id
+:=				VL
+字符串				string				abcde"\FGhij  opqr'st
 s				Id
 :=				VL
 a				Id
