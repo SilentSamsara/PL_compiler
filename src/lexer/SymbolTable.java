@@ -6,6 +6,7 @@ public class SymbolTable {
 	public static ArrayList<SortCode> sortCodeList = new ArrayList<>();
     public static ArrayList<WordItem> wordItemList = new ArrayList<>();//已匹配项目
 	public static void initLoadSortCodeList(){
+		sortCodeList.add(new SortCode("STRING", 99, "string"));
 		sortCodeList.add(new SortCode("WRITELN", 100, "function"));
 		sortCodeList.add(new SortCode("BEGIN", 101, "Start"));
 		sortCodeList.add(new SortCode("END", 102, "End"));
