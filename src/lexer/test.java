@@ -11,13 +11,6 @@ public class test {
 		ParseWords p = new ParseWords();
 		p.doWork(file);
 		
-//		int x = 133;
-//		Integer y = x;
-//		System.out.println(x == y);
-		
-		
-//		String xString = "0016";
-//		System.out.println(xString.substring(2));
 		
 	}
 

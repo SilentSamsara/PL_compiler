@@ -15,7 +15,7 @@ integer				INTEGER
 var				Var
 e				Id
 :				Mao
-string				Id
+string				string
 ;				Over
 begin				Start
 a				Id
@@ -36,7 +36,6 @@ d				Id
 ;				Over
 e				Id
 :=				VL
-字符串				string				abcde"\FGhij  opqr'st
 s				Id
 :=				VL
 a				Id

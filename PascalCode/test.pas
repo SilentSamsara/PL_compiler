@@ -5,7 +5,8 @@ a:=011;
 b:=23;
 c:=12.52;
 d:=00FF;
-e:="abcde\"\\FGhij  opqr'st"
+e:="abcde\"\\FGhij  o
+pqr'st"
 s:=a+b+c+d;
 writeln(s);
 end.

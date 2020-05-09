@@ -21,7 +21,7 @@ public class SymbolTable {
 		sortCodeList.add(new SortCode("<", 111, "Lt"));
 		sortCodeList.add(new SortCode(">", 112, "Gt"));
 		sortCodeList.add(new SortCode("<=", 113, "LtE"));
-		sortCodeList.add(new SortCode(">=", 114, "LtE"));
+		sortCodeList.add(new SortCode(">=", 114, "RtE"));
 		sortCodeList.add(new SortCode("<>", 115, "NEt"));
 		sortCodeList.add(new SortCode(",", 116, "Dot"));
 		sortCodeList.add(new SortCode(";", 117, "Over"));

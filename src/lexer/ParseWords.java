@@ -69,7 +69,13 @@ public class ParseWords {
 					matched = matched + key;
 				else
 					return false;
-			}else
+			}else if(key == '\n') {
+				ErrorWriter.errorList.add(new ErrorType("字符串跨行", line, matched));
+				nextLine();
+				line++;
+				return true;
+			}
+			else
 				matched = matched + key;
 		}
 		SymbolTable.wordItemList.add(new WordItem(matched,search("字符串") , line));
