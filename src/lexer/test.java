@@ -11,7 +11,7 @@ public class test {
 		ParseWords p = new ParseWords();
 		p.doWork(file);
 		
-		
+//		System.out.println(Integer.valueOf("11",8));
 	}
 
 }

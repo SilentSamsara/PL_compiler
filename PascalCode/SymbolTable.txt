@@ -20,8 +20,6 @@ string				string
 begin				Start
 a				Id
 :=				VL
-整数				num				3
-;				Over
 b				Id
 :=				VL
 整数				num				23

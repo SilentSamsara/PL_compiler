@@ -85,14 +85,16 @@ public class ParseWords {
 	private String transformation(String num , int op) {//进制转换函数
 		String back = num;
 		try {
-			if (op == 8 || op == 2 || op == 16) {//八进制转十进制
+			if (op == 8 || op == 2) {//八进制转十进制
 				back = Integer.valueOf(num,op).toString();
-			}else if(op != 10){
+			}else if (op == 16) {
+				back = Integer.valueOf(num.substring(2),op).toString();
+			}
+			else if(op != 10){
 				System.out.println("不支持进制类型");
 			}
 		} catch (Exception e) {
 			// TODO: handle exception
-			System.out.println("进制错误:line:"+line+" key:"+num+" 转"+op+"时出错");
 			ErrorWriter.addError("转译错误"+" 转"+op+"时出错", line, ""+num);
 		}
 		return back;
@@ -163,7 +165,7 @@ public class ParseWords {
 					buffer.append(key);
 					key = (char) reader.read();
 					int x = 0;
-					while ( (isNumber(key)) || key == '.' || ( key <= 'F' && key >= 'A' ) || ( key <= 'f' && key >= 'a' ) ){
+					while ( (isNumber(key)) || key == '.' || ( key <= 'F' && key >= 'A' ) || ( key <= 'f' && key >= 'a' ) || key == 'x' ||key == 'X' ){
 						if(key == '.')
 							x++;
 						buffer.append(key);
@@ -190,11 +192,24 @@ public class ParseWords {
 											break;
 										}
 									}
+								}else {
+									binary = 8;
 								}
 								num = transformation(num, binary);
 							}
 						}
-						long number = Long.parseLong(num);
+						long number = 0;
+						try {
+							number = Long.parseLong(num);
+						} catch (Exception e) {
+							// TODO: handle exception
+							ErrorWriter.errorList.add(new ErrorType("数字格式错误", line, num));
+							nextLine();
+							line++;
+							buffer.setLength(0);
+							key = (char) reader.read();
+							continue;
+						}
 						if (number >= Integer.MIN_VALUE && number <= Integer.MAX_VALUE){
 							SymbolTable.wordItemList.add(new WordItem(num, search("整数"), line));
 						}else {
