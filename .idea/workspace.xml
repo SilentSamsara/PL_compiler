@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="56795624-6e50-4e57-b561-faef61ccc6a5" name="默认的" comment="">
+      <change afterPath="$PROJECT_DIR$/PascalCode/SymbolTable.pas" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PascalCode/lexer_output.pas" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PascalCode/output.pas" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PascalCode/test.pas" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/META-INF/PL_compiler.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lexer/ParseWords.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lexer/ParseWords.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lexer/SymbolTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lexer/SymbolTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lexer/entry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lexer/test.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1bz5z6kEr3tGcpxkmMEyn1Fv5jh" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="新增" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="模块" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+  </component>
+  <component name="RunManager">
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lexer.test" />
+      <module name="PL_compiler" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lexer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="56795624-6e50-4e57-b561-faef61ccc6a5" name="默认的" comment="" />
+      <created>1589622340388</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589622340388</updated>
+      <workItem from="1589622342638" duration="2019000" />
+      <workItem from="1589624383204" duration="843000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="171" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589622414710">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="171" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/1920.0.1280.920@0.0.1536.824" timestamp="1589622414710" />
+    <state x="606" y="213" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589622519207">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="606" y="213" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824/1920.0.1280.920@0.0.1536.824" timestamp="1589622519207" />
+    <state x="407" y="0" key="CommitChangelistDialog2" timestamp="1589625047659">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="407" y="0" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1280.920@0.0.1536.824" timestamp="1589625047659" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1589625228633">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1280.920@0.0.1536.824" timestamp="1589625228633" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1589625228633">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1280.920@0.0.1536.824" timestamp="1589625228633" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1589625228633">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1280.920@0.0.1536.824" timestamp="1589625228633" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1589625228633">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1280.920@0.0.1536.824" timestamp="1589625228633" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1589625228628">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1280.920@0.0.1536.824" timestamp="1589625228628" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1589625228628">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1280.920@0.0.1536.824" timestamp="1589625228628" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1589625228627">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1280.920@0.0.1536.824" timestamp="1589625228627" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1589625228628">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1280.920@0.0.1536.824" timestamp="1589625228628" />
+    <state x="20" y="0" key="SettingsEditor" timestamp="1589624668348">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="20" y="0" key="SettingsEditor/0.0.1536.824/1920.0.1280.920@0.0.1536.824" timestamp="1589624668348" />
+  </component>
+</project>
