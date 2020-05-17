@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56795624-6e50-4e57-b561-faef61ccc6a5" name="默认的" comment="">
-      <change afterPath="$PROJECT_DIR$/PascalCode/SymbolTable.pas" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PascalCode/lexer_output.pas" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PascalCode/output.pas" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PascalCode/test.pas" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/META-INF/PL_compiler.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lexer/ParseWords.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lexer/ParseWords.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lexer/SymbolTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lexer/SymbolTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lexer/entry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lexer/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +64,8 @@
       <updated>1589622340388</updated>
       <workItem from="1589622342638" duration="2019000" />
       <workItem from="1589624383204" duration="843000" />
+      <workItem from="1589699749096" duration="374000" />
+      <workItem from="1589700135908" duration="2000" />
     </task>
     <servers />
   </component>
