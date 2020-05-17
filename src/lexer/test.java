@@ -2,16 +2,15 @@ package lexer;
 import java.io.File;
 import java.io.IOException;
 
-public class test {
+public class Test {
 
 	
 	public static void main(String[] args) throws IOException {
-		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
+		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
 		File file = new File("./PascalCode/test.pas");
 		ParseWords p = new ParseWords();
 		p.doWork(file);
-		
-//		System.out.println(Integer.valueOf("11",8));
+	
 	}
 
 }
