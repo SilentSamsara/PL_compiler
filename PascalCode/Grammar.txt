@@ -1,0 +1,26 @@
+start->S
+S->program id;  compoundstmt .
+compoundstmt->begin stmts end
+stmts->stmt
+stmts->stmts; stmt
+stmt->id := expr
+stmt->compoundstmt
+stmt->ifstmt
+stmt->forstmt
+stmt->while bool do stmt
+stmt->~
+ifstmt->if bool then stmt
+ifstmt->if bool then stmt else stmt 
+forstmt->for id := expr  to  expr  do  stmt 
+forstmt->for id := expr  downto  expr  do  stmt 
+bool->expr > expr
+bool->expr < expr 
+expr->expr + expr
+expr->expr - expr
+expr->expr * expr
+expr->expr / expr
+expr->expr ^ factor
+expr->factor
+factor->id
+factor->num
+factor->( expr )

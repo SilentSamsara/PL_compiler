@@ -1,12 +1,11 @@
-var a,b,c,d,s:integer;
-var e:string;
+program test;
 begin
-a:=0A;
-b:=23;
-c:=12.52;
-d:=0xFF;
-e:="abcde\"\\FGhij  o
-pqr'st"
-s:=a+b+c+d;
-writeln(s);
+x:=19; 
+z:=z*7+x;
+for i:=100 downto 15 do
+if x<y+(15-9) then y:=x
+else begin
+while x-y*z>x do begin y:=y+y^5-1 end;
+z:=z*7+x
+end
 end.

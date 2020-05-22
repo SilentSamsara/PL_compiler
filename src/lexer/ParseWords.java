@@ -105,7 +105,6 @@ public class ParseWords {
 	}
 	
 	private void rules() {//规则描述
-		SymbolTable.initLoadSortCodeList();
 		char key = 0;
 		try {
 			key = (char) reader.read();
@@ -134,9 +133,9 @@ public class ParseWords {
 					}
 					key = (char) reader.read();
 				}
-				else if (key == '\r' || key == ' ' || key == '\t' || key == '.'){//跳过tab、空格
+				else if (key == '\r' || key == ' ' || key == '\t' ){//跳过tab、空格
 					key = (char) reader.read();
-				}else if (key == '+' || key == '-' || key == '*' || key == ',' || key == ';' || key == '='|| key == '#' || key == '(' || key == ')'){//运算符
+				}else if (key == '+' || key == '-' || key == '^' || key == '.' || key == '*' || key == ',' || key == ';' || key == '='|| key == '#' || key == '(' || key == ')'){//运算符
 					String word = key + "";
 					SymbolTable.wordItemList.add(new WordItem(word, search(word), line));
 					key = (char) reader.read();
@@ -305,6 +304,7 @@ public class ParseWords {
 		}
 	}
 	public void doWork(File file) throws IOException {
+		SymbolTable.initLoadSortCodeList();
 		reader = new BufferedReader(new FileReader(file));
 		buffer = new StringBuffer();
 		line = 1;
@@ -315,6 +315,7 @@ public class ParseWords {
 	}
 
 	public Object doWorkByStr(String str) throws IOException {
+		SymbolTable.initLoadSortCodeList();
 		reader = new BufferedReader(new StringReader(str));
 		buffer = new StringBuffer();
 		line = 1;

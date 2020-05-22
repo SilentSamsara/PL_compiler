@@ -1,13 +1,11 @@
-<var><Id,a><,><Id,b><,><Id,c><,><Id,d><,><Id,s><:><integer><;>
-<var><Id,e><:><string><;>
+<program><Id,test><;>
 <begin>
-<Id,a><:=>
-<Id,b><:=><num,23><;>
-<Id,c><:=><num,12.52><;>
-<Id,d><:=><num,255><;>
-<Id,e><:=>
-<Id,s><:=><Id,a><+><Id,b><+><Id,c><+><Id,d><;>
-<writeln><(><Id,s><)><;>
+<Id,x><:=><num,19><;>
+<Id,z><:=><Id,z><*><num,7><+><Id,x><;>
+<for><Id,i><:=><num,100><downto><num,15><do>
+<if><Id,x><<><Id,y><+><(><num,15><-><num,9><)><then><Id,y><:=><Id,x>
+<else><begin>
+<while><Id,x><-><Id,y><*><Id,z><>><Id,x><do><begin><Id,y><:=><Id,y><+><Id,y><^><num,5><-><num,1><end><;>
+<Id,z><:=><Id,z><*><num,7><+><Id,x>
 <end>
-数字格式错误 line:4 key:0A
-字符串跨行 line:8 key:abcde"\FGhij  o
+<end><.>

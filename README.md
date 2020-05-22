@@ -3,19 +3,16 @@
 error:
 
 ```pascal
-var a,b,c,d,f,s,g:integer;
-var e:string;
+program test;
 begin
-a:=011;
-b:=088;
-c:=12.52;
-d:=00FF;
-f:=0X12;
-e:="abcde\"\\FGhij 
-opqr'st";
-g:=321546486461;
-s:=a+b+c+d;
-writeln(s);
+x:=19; 
+z:=z*7+x;
+for i:=100 downto 15 do
+if x<y+(15-9) then y:=x
+else begin
+while x-y*z>x do begin y:=y+y^5-1 end;
+z:=z*7+x
+
 end.
 ```
 
@@ -24,20 +21,18 @@ end.
 normal:
 
 ```pascal
-var a,b,c,d,f,s,g:integer;
-var e:string;
+program test;
 begin
-a:=011;
-b:=077;
-c:=12.52;
-d:=00FF;
-f:=0X12;
-e:="abcde\"\\FGhij opqr'st";
-g:=321;
-s:=a+b+c+d;
-writeln(s);
+x:=19; 
+z:=z*7+x;
+for i:=100 downto 15 do
+if x<y+(15-9) then y:=x
+else begin
+while x-y*z>x do begin y:=y+y^5-1 end;
+z:=z*7+x
+end
 end.
 ```
 
-代码中的中文编码格式为GBK
+
 
