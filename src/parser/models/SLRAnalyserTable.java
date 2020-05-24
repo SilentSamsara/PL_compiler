@@ -71,50 +71,41 @@ public class SLRAnalyserTable {
 							ACTION.get(i).get(location).action = 's';
 						} else if (ACTION.get(i).get(location).action == 'r') {
 //							throw new SRException(1);
-							//Pascal专用规则，不建议修改
+							//优先级规则: ^ > *、/ > +、-
 							if ((i == 44 || i == 45)) {
-								if((terminal.get(location).equals("*")
-									||terminal.get(location).equals("/")
-									||terminal.get(location).equals("^"))) {
-								ACTION.get(i).get(location).action='s';
-								ACTION.get(i).get(location).number=33;
-								}else if (terminal.get(location).equals("+")) {
-									ACTION.get(i).get(location).action='r';
+								if((terminal.get(location).equals("+")
+									||terminal.get(location).equals("-")
+									)) {
+								ACTION.get(i).get(location).action='r';
+								if(i==44)
 									ACTION.get(i).get(location).number=18;
-								}else if(terminal.get(location).equals("-")) {
-									ACTION.get(i).get(location).action='r';
+								else
 									ACTION.get(i).get(location).number=19;
+								}else if (terminal.get(location).equals("*")) {
+									ACTION.get(i).get(location).action='s';
+									ACTION.get(i).get(location).number=35;
+								}else if(terminal.get(location).equals("/")) {
+									ACTION.get(i).get(location).action='s';
+									ACTION.get(i).get(location).number=36;
 								}
-							}
-							if ( i == 46 || i == 47 ) {
+							}else if ( i == 46 || i == 47 ) {
 								if(terminal.get(location).equals("^")) {
 									ACTION.get(i).get(location).action='s';
-									ACTION.get(i).get(location).number=33;
-									}else if (terminal.get(location).equals("*")) {
-										ACTION.get(i).get(location).action='r';
-										ACTION.get(i).get(location).number=20;
-									}else if(terminal.get(location).equals("/")) {
-										ACTION.get(i).get(location).action='r';
-										ACTION.get(i).get(location).number=21;
-									}
+									ACTION.get(i).get(location).number=37;
+								}else if (i==46) {
+									ACTION.get(i).get(location).action='r';
+									ACTION.get(i).get(location).number=20;
+								}else if(i==47) {
+									ACTION.get(i).get(location).action='r';
+									ACTION.get(i).get(location).number=21;
+								}
 							}
-							if(terminal.get(location).equals("^")) {
+							else if(terminal.get(location).equals("^")) {
 								ACTION.get(i).get(location).action='s';
-								ACTION.get(i).get(location).number=33;
-							}else if (terminal.get(location).equals(".")) {
-								ACTION.get(i).get(location).action='s';
-								ACTION.get(i).get(location).number=2;
+								ACTION.get(i).get(location).number=37;
 							}else if (terminal.get(location).equals("else")) {
 								ACTION.get(i).get(location).action='s';
-								ACTION.get(i).get(location).number=4;
-								ACTION.get(5).get(5).action ='r';
-								ACTION.get(5).get(5).number = 13;
-								ACTION.get(7).get(24).action = 'r';
-								ACTION.get(7).get(24).number = 2;
-								ACTION.get(5).get(Grammar.non_terminals.indexOf("compoundstmt")).action = 'r';
-								ACTION.get(5).get(Grammar.non_terminals.indexOf("compoundstmt")).number = 7;
-								ACTION.get(0).get(2).action = 'r';
-								ACTION.get(0).get(2).number = 13;
+								ACTION.get(i).get(location).number=52;/*这里*/
 							}
 							continue;
 						}

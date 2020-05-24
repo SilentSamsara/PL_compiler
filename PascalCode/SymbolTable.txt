@@ -7208,39 +7208,37 @@ then				Then
 ID				Id				y
 :=				VL
 ID				Id				x
-end				End
-.				point
-名字				属性				值
-program				PROGRAM
-ID				Id				test
-;				Over
+else				Else
 begin				Start
+while				While
 ID				Id				x
-:=				VL
-INTEGER_VALUE				num				19
-;				Over
-for				function
-ID				Id				i
-:=				VL
-INTEGER_VALUE				num				100
-downto				function
-INTEGER_VALUE				num				15
-do				Do
-if				If
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
 ID				Id				x
-<				Lt
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
 ID				Id				y
 +				Add
-(				Left
-INTEGER_VALUE				num				15
--				Sub
-INTEGER_VALUE				num				9
-)				Right
-then				Then
 ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
 :=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
 ID				Id				x
-else				Else
+end				End
 end				End
 .				point
 名字				属性				值
@@ -7459,40 +7457,9 @@ INTEGER_VALUE				num				15
 INTEGER_VALUE				num				9
 )				Right
 then				Then
-ID				Id				y
-:=				VL
-ID				Id				x
-else				Else
-begin				Start
-while				While
-ID				Id				x
-+				Add
-ID				Id				y
-*				Mul
-ID				Id				z
->				Gt
-ID				Id				x
-do				Do
-begin				Start
-ID				Id				y
-:=				VL
-ID				Id				y
-+				Add
 ID				Id				y
-^				index
-INTEGER_VALUE				num				5
--				Sub
-INTEGER_VALUE				num				1
-end				End
-;				Over
-ID				Id				z
 :=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
 ID				Id				x
-end				End
 else				Else
 begin				Start
 while				While
@@ -7586,7 +7553,38 @@ ID				Id				z
 INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
+end				End
 end				End
+.				point
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
 else				Else
 begin				Start
 while				While
@@ -7681,6 +7679,37 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
+end				End
+.				point
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
 else				Else
 begin				Start
 while				While
@@ -7774,7 +7803,38 @@ ID				Id				z
 INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
+end				End
 end				End
+.				point
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
 else				Else
 begin				Start
 while				While
@@ -7871,7 +7931,6 @@ ID				Id				x
 end				End
 end				End
 .				point
-名字				属性				值
 program				PROGRAM
 ID				Id				test
 ;				Over
@@ -7932,13 +7991,6 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 end				End
 .				point
 名字				属性				值
@@ -8002,16 +8054,8 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 end				End
 .				point
-名字				属性				值
 program				PROGRAM
 ID				Id				test
 ;				Over
@@ -8072,13 +8116,6 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 end				End
 .				point
 名字				属性				值
@@ -8142,13 +8179,6 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 end				End
 .				point
 名字				属性				值
@@ -8212,16 +8242,8 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 end				End
 .				point
-名字				属性				值
 program				PROGRAM
 ID				Id				test
 ;				Over
@@ -8282,13 +8304,6 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 end				End
 .				point
 名字				属性				值
@@ -8352,13 +8367,6 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 end				End
 .				point
 名字				属性				值
@@ -8422,13 +8430,6 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 end				End
 .				point
 名字				属性				值
@@ -8492,13 +8493,6 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 end				End
 .				point
 名字				属性				值
@@ -8562,13 +8556,6 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 end				End
 .				point
 名字				属性				值
@@ -8632,13 +8619,6 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 end				End
 .				point
 名字				属性				值
@@ -8702,13 +8682,6 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 end				End
 .				point
 名字				属性				值
@@ -8772,15 +8745,9 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 end				End
 .				point
+名字				属性				值
 名字				属性				值
 program				PROGRAM
 ID				Id				test
@@ -8842,13 +8809,6 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 end				End
 .				point
 名字				属性				值
@@ -8912,13 +8872,6 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 end				End
 .				point
 名字				属性				值
@@ -8982,13 +8935,6 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 end				End
 .				point
 名字				属性				值
@@ -9052,16 +8998,8 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 end				End
 .				point
-名字				属性				值
 program				PROGRAM
 ID				Id				test
 ;				Over
@@ -9185,17 +9123,8 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 end				End
 .				point
-名字				属性				值
 program				PROGRAM
 ID				Id				test
 ;				Over
@@ -9256,16 +9185,8 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 end				End
 .				point
-名字				属性				值
 program				PROGRAM
 ID				Id				test
 ;				Over
@@ -9326,13 +9247,6 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 end				End
 .				point
 名字				属性				值
@@ -9396,13 +9310,6 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 end				End
 .				point
 名字				属性				值
@@ -9414,13 +9321,6 @@ ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
 ;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 for				function
 ID				Id				i
 :=				VL
@@ -9475,7 +9375,6 @@ ID				Id				x
 end				End
 end				End
 .				point
-名字				属性				值
 program				PROGRAM
 ID				Id				test
 ;				Over
@@ -9547,13 +9446,6 @@ ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
 ;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 for				function
 ID				Id				i
 :=				VL
@@ -9608,7 +9500,6 @@ ID				Id				x
 end				End
 end				End
 .				point
-名字				属性				值
 program				PROGRAM
 ID				Id				test
 ;				Over
@@ -9617,13 +9508,6 @@ ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
 ;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 for				function
 ID				Id				i
 :=				VL
@@ -9687,13 +9571,6 @@ ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
 ;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 for				function
 ID				Id				i
 :=				VL
@@ -9757,13 +9634,6 @@ ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
 ;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 for				function
 ID				Id				i
 :=				VL
@@ -9827,13 +9697,6 @@ ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
 ;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 for				function
 ID				Id				i
 :=				VL
@@ -9897,13 +9760,6 @@ ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
 ;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 for				function
 ID				Id				i
 :=				VL
@@ -9966,14 +9822,6 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 ;				Over
 for				function
 ID				Id				i
@@ -10037,14 +9885,6 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 ;				Over
 for				function
 ID				Id				i
@@ -10098,14 +9938,6 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
-;				Over
 end				End
 .				point
 名字				属性				值
@@ -10116,14 +9948,6 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 ;				Over
 for				function
 ID				Id				i
@@ -10177,15 +10001,6 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-.				point
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
-;				Over
 end				End
 .				point
 名字				属性				值
@@ -10196,14 +10011,6 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 ;				Over
 for				function
 ID				Id				i
@@ -10267,14 +10074,6 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 ;				Over
 for				function
 ID				Id				i
@@ -10327,7 +10126,6 @@ ID				Id				z
 INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
-;				Over
 end				End
 end				End
 .				point
@@ -10339,14 +10137,6 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 ;				Over
 for				function
 ID				Id				i
@@ -10410,14 +10200,6 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 ;				Over
 for				function
 ID				Id				i
@@ -10471,15 +10253,6 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
-;				Over
 end				End
 .				point
 名字				属性				值
@@ -10490,14 +10263,6 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 ;				Over
 for				function
 ID				Id				i
@@ -10551,7 +10316,6 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-;				Over
 end				End
 .				point
 名字				属性				值
@@ -10562,14 +10326,6 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 ;				Over
 for				function
 ID				Id				i
@@ -10633,14 +10389,6 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 ;				Over
 for				function
 ID				Id				i
@@ -10694,7 +10442,6 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-;				Over
 end				End
 .				point
 名字				属性				值
@@ -10705,14 +10452,6 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 ;				Over
 for				function
 ID				Id				i
@@ -10766,7 +10505,6 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-;				Over
 end				End
 .				point
 名字				属性				值
@@ -10777,22 +10515,6 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
-;				Over
-ID				Id				x
-+				Add
-ID				Id				y
-*				Mul
-ID				Id				z
->				Gt
-ID				Id				x
 ;				Over
 for				function
 ID				Id				i
@@ -10857,22 +10579,6 @@ ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
 ;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
-;				Over
-ID				Id				x
-+				Add
-ID				Id				y
-*				Mul
-ID				Id				z
-:=				VL
-ID				Id				x
-;				Over
 for				function
 ID				Id				i
 :=				VL
@@ -10935,18 +10641,6 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
-;				Over
-ID				Id				x
-:=				VL
-ID				Id				x
 ;				Over
 for				function
 ID				Id				i
@@ -11010,14 +10704,6 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 ;				Over
 for				function
 ID				Id				i
@@ -11081,24 +10767,7 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 ;				Over
-ID				Id				z
-:=				VL
-ID				Id				x
-+				Add
-ID				Id				y
-*				Mul
-ID				Id				z
->				Gt
-ID				Id				x
 for				function
 ID				Id				i
 :=				VL
@@ -11161,24 +10830,6 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				x
-+				Add
-ID				Id				y
-*				Mul
-ID				Id				z
->				Gt
-ID				Id				x
 ;				Over
 for				function
 ID				Id				i
@@ -11242,14 +10893,6 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 ;				Over
 for				function
 ID				Id				i
@@ -11313,13 +10956,6 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 ;				Over
 for				function
 ID				Id				i
@@ -11383,14 +11019,6 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 ;				Over
 for				function
 ID				Id				i
@@ -11454,14 +11082,6 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 ;				Over
 for				function
 ID				Id				i
@@ -11476,11 +11096,9 @@ ID				Id				x
 ID				Id				y
 +				Add
 (				Left
-(				Left
 INTEGER_VALUE				num				15
 -				Sub
 INTEGER_VALUE				num				9
-)				Right
 )				Right
 then				Then
 ID				Id				y
@@ -11527,14 +11145,6 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 ;				Over
 for				function
 ID				Id				i
@@ -11549,7 +11159,6 @@ ID				Id				x
 ID				Id				y
 +				Add
 (				Left
-(				Left
 INTEGER_VALUE				num				15
 -				Sub
 INTEGER_VALUE				num				9
@@ -11599,14 +11208,6 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 ;				Over
 for				function
 ID				Id				i
@@ -11620,6 +11221,7 @@ ID				Id				x
 <				Lt
 ID				Id				y
 +				Add
+(				Left
 INTEGER_VALUE				num				15
 -				Sub
 INTEGER_VALUE				num				9
@@ -11669,14 +11271,6 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 ;				Over
 for				function
 ID				Id				i
@@ -11741,14 +11335,6 @@ ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
 ;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
-;				Over
 for				function
 ID				Id				i
 :=				VL
@@ -12011,14 +11597,12 @@ do				Do
 if				If
 ID				Id				x
 <				Lt
-(				Left
 ID				Id				y
 +				Add
 (				Left
 INTEGER_VALUE				num				15
 -				Sub
 INTEGER_VALUE				num				9
-)				Right
 )				Right
 then				Then
 ID				Id				y
@@ -12362,14 +11946,6 @@ INTEGER_VALUE				num				5
 INTEGER_VALUE				num				1
 end				End
 ;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
-begin				Start
 ID				Id				z
 :=				VL
 ID				Id				z
@@ -12379,7 +11955,6 @@ INTEGER_VALUE				num				7
 ID				Id				x
 end				End
 end				End
-end				End
 .				point
 名字				属性				值
 program				PROGRAM
@@ -12504,7 +12079,25 @@ ID				Id				z
 INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
+end				End
 end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
 if				If
 ID				Id				x
 <				Lt
@@ -12612,7 +12205,25 @@ ID				Id				z
 INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
+end				End
 end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
 if				If
 ID				Id				x
 <				Lt
@@ -12694,7 +12305,7 @@ else				Else
 begin				Start
 while				While
 ID				Id				x
--				Sub
++				Add
 ID				Id				y
 *				Mul
 ID				Id				z
@@ -12720,7 +12331,25 @@ ID				Id				z
 INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
+end				End
 end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
 if				If
 ID				Id				x
 <				Lt
@@ -12802,7 +12431,7 @@ else				Else
 begin				Start
 while				While
 ID				Id				x
--				Sub
++				Add
 ID				Id				y
 *				Mul
 ID				Id				z
@@ -12828,7 +12457,25 @@ ID				Id				z
 INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
+end				End
 end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
 if				If
 ID				Id				x
 <				Lt
@@ -12910,7 +12557,7 @@ else				Else
 begin				Start
 while				While
 ID				Id				x
--				Sub
++				Add
 ID				Id				y
 *				Mul
 ID				Id				z
@@ -12936,7 +12583,25 @@ ID				Id				z
 INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
+end				End
 end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
 if				If
 ID				Id				x
 <				Lt
@@ -13018,7 +12683,7 @@ else				Else
 begin				Start
 while				While
 ID				Id				x
--				Sub
++				Add
 ID				Id				y
 *				Mul
 ID				Id				z
@@ -13045,12 +12710,30 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-if				If
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
 ID				Id				x
-<				Lt
-ID				Id				y
-+				Add
-(				Left
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
 INTEGER_VALUE				num				15
 -				Sub
 INTEGER_VALUE				num				9
@@ -13126,7 +12809,7 @@ else				Else
 begin				Start
 while				While
 ID				Id				x
--				Sub
++				Add
 ID				Id				y
 *				Mul
 ID				Id				z
@@ -13153,6 +12836,24 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
 if				If
 ID				Id				x
 <				Lt
@@ -13234,7 +12935,7 @@ else				Else
 begin				Start
 while				While
 ID				Id				x
--				Sub
++				Add
 ID				Id				y
 *				Mul
 ID				Id				z
@@ -13297,7 +12998,7 @@ else				Else
 begin				Start
 while				While
 ID				Id				x
--				Sub
++				Add
 ID				Id				y
 *				Mul
 ID				Id				z
@@ -13323,9 +13024,6 @@ ID				Id				z
 INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
-ID				Id				y
-:=				VL
-ID				Id				x
 end				End
 end				End
 .				point
@@ -13363,7 +13061,7 @@ else				Else
 begin				Start
 while				While
 ID				Id				x
--				Sub
++				Add
 ID				Id				y
 *				Mul
 ID				Id				z
@@ -13388,10 +13086,6 @@ ID				Id				z
 *				Mul
 INTEGER_VALUE				num				7
 +				Add
-ID				Id				x
-;				Over
-ID				Id				y
-:=				VL
 ID				Id				x
 end				End
 end				End
@@ -13430,7 +13124,7 @@ else				Else
 begin				Start
 while				While
 ID				Id				x
--				Sub
++				Add
 ID				Id				y
 *				Mul
 ID				Id				z
@@ -13455,12 +13149,7 @@ ID				Id				z
 *				Mul
 INTEGER_VALUE				num				7
 +				Add
-ID				Id				x
-;				Over
-ID				Id				y
-:=				VL
 ID				Id				x
-;				Over
 end				End
 end				End
 .				point
@@ -13498,7 +13187,7 @@ else				Else
 begin				Start
 while				While
 ID				Id				x
--				Sub
++				Add
 ID				Id				y
 *				Mul
 ID				Id				z
@@ -13561,7 +13250,7 @@ else				Else
 begin				Start
 while				While
 ID				Id				x
--				Sub
++				Add
 ID				Id				y
 *				Mul
 ID				Id				z
@@ -13624,7 +13313,7 @@ else				Else
 begin				Start
 while				While
 ID				Id				x
--				Sub
++				Add
 ID				Id				y
 *				Mul
 ID				Id				z
@@ -13687,7 +13376,7 @@ else				Else
 begin				Start
 while				While
 ID				Id				x
--				Sub
++				Add
 ID				Id				y
 *				Mul
 ID				Id				z
@@ -13714,7 +13403,6 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-;				Over
 end				End
 .				point
 名字				属性				值
@@ -13751,7 +13439,7 @@ else				Else
 begin				Start
 while				While
 ID				Id				x
--				Sub
++				Add
 ID				Id				y
 *				Mul
 ID				Id				z
@@ -13778,14 +13466,6 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 end				End
 .				point
 名字				属性				值
@@ -13822,7 +13502,7 @@ else				Else
 begin				Start
 while				While
 ID				Id				x
--				Sub
++				Add
 ID				Id				y
 *				Mul
 ID				Id				z
@@ -13849,13 +13529,6 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 end				End
 .				point
 名字				属性				值
@@ -13867,13 +13540,6 @@ ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
 ;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 for				function
 ID				Id				i
 :=				VL
@@ -13899,7 +13565,7 @@ else				Else
 begin				Start
 while				While
 ID				Id				x
--				Sub
++				Add
 ID				Id				y
 *				Mul
 ID				Id				z
@@ -13936,14 +13602,6 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 ;				Over
 for				function
 ID				Id				i
@@ -13970,7 +13628,7 @@ else				Else
 begin				Start
 while				While
 ID				Id				x
--				Sub
++				Add
 ID				Id				y
 *				Mul
 ID				Id				z
@@ -14007,14 +13665,6 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 ;				Over
 for				function
 ID				Id				i
@@ -14041,7 +13691,7 @@ else				Else
 begin				Start
 while				While
 ID				Id				x
--				Sub
++				Add
 ID				Id				y
 *				Mul
 ID				Id				z
@@ -14068,14 +13718,6 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 end				End
 .				point
 名字				属性				值
@@ -14086,14 +13728,6 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 ;				Over
 for				function
 ID				Id				i
@@ -14120,7 +13754,7 @@ else				Else
 begin				Start
 while				While
 ID				Id				x
--				Sub
++				Add
 ID				Id				y
 *				Mul
 ID				Id				z
@@ -14147,14 +13781,6 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 end				End
 .				point
 名字				属性				值
@@ -14165,14 +13791,6 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 ;				Over
 for				function
 ID				Id				i
@@ -14199,7 +13817,7 @@ else				Else
 begin				Start
 while				While
 ID				Id				x
--				Sub
++				Add
 ID				Id				y
 *				Mul
 ID				Id				z
@@ -14226,14 +13844,6 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 end				End
 .				point
 名字				属性				值
@@ -14244,14 +13854,6 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 ;				Over
 for				function
 ID				Id				i
@@ -14278,7 +13880,7 @@ else				Else
 begin				Start
 while				While
 ID				Id				x
--				Sub
++				Add
 ID				Id				y
 *				Mul
 ID				Id				z
@@ -14305,13 +13907,6 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 end				End
 .				point
 名字				属性				值
@@ -14322,14 +13917,6 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 ;				Over
 for				function
 ID				Id				i
@@ -14356,7 +13943,7 @@ else				Else
 begin				Start
 while				While
 ID				Id				x
--				Sub
++				Add
 ID				Id				y
 *				Mul
 ID				Id				z
@@ -14383,13 +13970,6 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 end				End
 .				point
 名字				属性				值
@@ -14400,14 +13980,6 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 ;				Over
 for				function
 ID				Id				i
@@ -14434,7 +14006,7 @@ else				Else
 begin				Start
 while				While
 ID				Id				x
--				Sub
++				Add
 ID				Id				y
 *				Mul
 ID				Id				z
@@ -14461,13 +14033,6 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 end				End
 .				point
 名字				属性				值
@@ -14479,14 +14044,6 @@ ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
 ;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
-;				Over
 for				function
 ID				Id				i
 :=				VL
@@ -14512,7 +14069,7 @@ else				Else
 begin				Start
 while				While
 ID				Id				x
--				Sub
++				Add
 ID				Id				y
 *				Mul
 ID				Id				z
@@ -14539,13 +14096,6 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 end				End
 .				point
 名字				属性				值
@@ -14556,14 +14106,6 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 ;				Over
 for				function
 ID				Id				i
@@ -14590,7 +14132,7 @@ else				Else
 begin				Start
 while				While
 ID				Id				x
--				Sub
++				Add
 ID				Id				y
 *				Mul
 ID				Id				z
@@ -14617,13 +14159,6 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 end				End
 .				point
 名字				属性				值
@@ -14634,14 +14169,6 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 ;				Over
 for				function
 ID				Id				i
@@ -14668,7 +14195,7 @@ else				Else
 begin				Start
 while				While
 ID				Id				x
--				Sub
++				Add
 ID				Id				y
 *				Mul
 ID				Id				z
@@ -14695,13 +14222,6 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 end				End
 .				point
 名字				属性				值
@@ -14712,14 +14232,6 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 ;				Over
 for				function
 ID				Id				i
@@ -14746,7 +14258,7 @@ else				Else
 begin				Start
 while				While
 ID				Id				x
--				Sub
++				Add
 ID				Id				y
 *				Mul
 ID				Id				z
@@ -14773,13 +14285,6 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 end				End
 .				point
 名字				属性				值
@@ -14790,14 +14295,6 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 ;				Over
 for				function
 ID				Id				i
@@ -14824,7 +14321,7 @@ else				Else
 begin				Start
 while				While
 ID				Id				x
--				Sub
++				Add
 ID				Id				y
 *				Mul
 ID				Id				z
@@ -14851,16 +14348,19 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 end				End
 .				point
+名字				属性				值
+INTEGER_VALUE				num				0
+ID				Id				program2
+ID				Id				id3
+;				Over
+INTEGER_VALUE				num				4
+ID				Id				begin6
+ID				Id				id10
+:=				VL
+INTEGER_VALUE				num				19
+ID				Id				factor22
 名字				属性				值
 program				PROGRAM
 ID				Id				test
@@ -14869,14 +14369,6 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 ;				Over
 for				function
 ID				Id				i
@@ -14903,7 +14395,7 @@ else				Else
 begin				Start
 while				While
 ID				Id				x
--				Sub
++				Add
 ID				Id				y
 *				Mul
 ID				Id				z
@@ -14930,14 +14422,6 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 end				End
 .				point
 名字				属性				值
@@ -14948,14 +14432,6 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 ;				Over
 for				function
 ID				Id				i
@@ -14982,7 +14458,7 @@ else				Else
 begin				Start
 while				While
 ID				Id				x
--				Sub
++				Add
 ID				Id				y
 *				Mul
 ID				Id				z
@@ -15009,14 +14485,6 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 end				End
 .				point
 名字				属性				值
@@ -15027,14 +14495,6 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 ;				Over
 for				function
 ID				Id				i
@@ -15061,7 +14521,7 @@ else				Else
 begin				Start
 while				While
 ID				Id				x
--				Sub
++				Add
 ID				Id				y
 *				Mul
 ID				Id				z
@@ -15088,14 +14548,6 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 end				End
 .				point
 名字				属性				值
@@ -15106,14 +14558,6 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 ;				Over
 for				function
 ID				Id				i
@@ -15140,7 +14584,7 @@ else				Else
 begin				Start
 while				While
 ID				Id				x
--				Sub
++				Add
 ID				Id				y
 *				Mul
 ID				Id				z
@@ -15167,14 +14611,6 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 end				End
 .				point
 名字				属性				值
@@ -15185,14 +14621,6 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 ;				Over
 for				function
 ID				Id				i
@@ -15219,7 +14647,7 @@ else				Else
 begin				Start
 while				While
 ID				Id				x
--				Sub
++				Add
 ID				Id				y
 *				Mul
 ID				Id				z
@@ -15246,14 +14674,6 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 end				End
 .				point
 名字				属性				值
@@ -15264,14 +14684,6 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 ;				Over
 for				function
 ID				Id				i
@@ -15298,7 +14710,7 @@ else				Else
 begin				Start
 while				While
 ID				Id				x
--				Sub
++				Add
 ID				Id				y
 *				Mul
 ID				Id				z
@@ -15325,14 +14737,6 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 end				End
 .				point
 名字				属性				值
@@ -15343,14 +14747,6 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 ;				Over
 for				function
 ID				Id				i
@@ -15377,7 +14773,7 @@ else				Else
 begin				Start
 while				While
 ID				Id				x
--				Sub
++				Add
 ID				Id				y
 *				Mul
 ID				Id				z
@@ -15403,12 +14799,44 @@ ID				Id				z
 INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
+end				End
 end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
 ;				Over
 begin				Start
-while				While
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
 ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
 -				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
 ID				Id				y
 *				Mul
 ID				Id				z
@@ -15445,14 +14873,6 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 ;				Over
 for				function
 ID				Id				i
@@ -15479,7 +14899,7 @@ else				Else
 begin				Start
 while				While
 ID				Id				x
--				Sub
++				Add
 ID				Id				y
 *				Mul
 ID				Id				z
@@ -15505,12 +14925,44 @@ ID				Id				z
 INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
+end				End
 end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
 ;				Over
 begin				Start
-while				While
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
 ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
 -				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
 ID				Id				y
 *				Mul
 ID				Id				z
@@ -15536,6 +14988,7 @@ ID				Id				z
 INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
+end				End
 end				End
 .				point
 名字				属性				值
@@ -15546,14 +14999,6 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 ;				Over
 for				function
 ID				Id				i
@@ -15580,7 +15025,7 @@ else				Else
 begin				Start
 while				While
 ID				Id				x
--				Sub
++				Add
 ID				Id				y
 *				Mul
 ID				Id				z
@@ -15607,14 +15052,6 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 end				End
 .				point
 名字				属性				值
@@ -15626,13 +15063,4785 @@ ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
 ;				Over
-ID				Id				z
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+ID				Id				en
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+ID				Id				en
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+ID				Id				en
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+ID				Id				begi
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+ID				Id				ese
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+ID				Id				en
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+ID				Id				ese
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+ID				Id				en
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+ID				Id				ese
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+ID				Id				en
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+ID				Id				en
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+ID				Id				en
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+ID				Id				en
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+ID				Id				en
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+ID				Id				en
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+ID				Id				en
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+to				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+#				#
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+#				#
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+#				#
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
 :=				VL
 ID				Id				z
 *				Mul
 INTEGER_VALUE				num				7
 +				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
 ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
 ;				Over
 for				function
 ID				Id				i
@@ -15658,8 +19867,71 @@ ID				Id				x
 else				Else
 begin				Start
 while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
+ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
 ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
 -				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
+:=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
 ID				Id				y
 *				Mul
 ID				Id				z
@@ -15678,20 +19950,51 @@ INTEGER_VALUE				num				5
 INTEGER_VALUE				num				1
 end				End
 ;				Over
+ID				Id				z
+:=				VL
 ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
+end				End
+end				End
+.				point
+名字				属性				值
+program				PROGRAM
+ID				Id				test
+;				Over
+begin				Start
+ID				Id				x
+:=				VL
+INTEGER_VALUE				num				19
+;				Over
+for				function
+ID				Id				i
+:=				VL
+INTEGER_VALUE				num				100
+downto				function
+INTEGER_VALUE				num				15
+do				Do
+if				If
+ID				Id				x
+<				Lt
+ID				Id				y
++				Add
+(				Left
+INTEGER_VALUE				num				15
+-				Sub
+INTEGER_VALUE				num				9
+)				Right
+then				Then
+ID				Id				y
 :=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
 ID				Id				x
-end				End
-;				Over
 else				Else
 begin				Start
 while				While
 ID				Id				x
--				Sub
++				Add
 ID				Id				y
 *				Mul
 ID				Id				z
@@ -15718,14 +20021,6 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 end				End
 .				point
 名字				属性				值
@@ -15736,14 +20031,6 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 ;				Over
 for				function
 ID				Id				i
@@ -15765,7 +20052,30 @@ INTEGER_VALUE				num				9
 then				Then
 ID				Id				y
 :=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
 ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
+;				Over
 ID				Id				z
 :=				VL
 ID				Id				z
@@ -15773,6 +20083,7 @@ ID				Id				z
 INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
+end				End
 end				End
 .				point
 名字				属性				值
@@ -15783,14 +20094,6 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 ;				Over
 for				function
 ID				Id				i
@@ -15812,7 +20115,29 @@ INTEGER_VALUE				num				9
 then				Then
 ID				Id				y
 :=				VL
+ID				Id				x
+else				Else
+begin				Start
+while				While
+ID				Id				x
++				Add
+ID				Id				y
+*				Mul
+ID				Id				z
+>				Gt
 ID				Id				x
+do				Do
+begin				Start
+ID				Id				y
+:=				VL
+ID				Id				y
++				Add
+ID				Id				y
+^				index
+INTEGER_VALUE				num				5
+-				Sub
+INTEGER_VALUE				num				1
+end				End
 ;				Over
 ID				Id				z
 :=				VL
@@ -15822,6 +20147,7 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
+end				End
 .				point
 名字				属性				值
 program				PROGRAM
@@ -15831,14 +20157,6 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 ;				Over
 for				function
 ID				Id				i
@@ -15865,7 +20183,7 @@ else				Else
 begin				Start
 while				While
 ID				Id				x
--				Sub
++				Add
 ID				Id				y
 *				Mul
 ID				Id				z
@@ -15892,14 +20210,6 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 end				End
 .				point
 名字				属性				值
@@ -15910,14 +20220,6 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 ;				Over
 for				function
 ID				Id				i
@@ -15944,7 +20246,7 @@ else				Else
 begin				Start
 while				While
 ID				Id				x
--				Sub
++				Add
 ID				Id				y
 *				Mul
 ID				Id				z
@@ -15971,14 +20273,6 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 end				End
 .				point
 名字				属性				值
@@ -15989,14 +20283,6 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 ;				Over
 for				function
 ID				Id				i
@@ -16023,7 +20309,7 @@ else				Else
 begin				Start
 while				While
 ID				Id				x
--				Sub
++				Add
 ID				Id				y
 *				Mul
 ID				Id				z
@@ -16050,13 +20336,6 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 end				End
 .				point
 名字				属性				值
@@ -16067,14 +20346,6 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 ;				Over
 for				function
 ID				Id				i
@@ -16101,7 +20372,7 @@ else				Else
 begin				Start
 while				While
 ID				Id				x
--				Sub
++				Add
 ID				Id				y
 *				Mul
 ID				Id				z
@@ -16128,13 +20399,6 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 end				End
 .				point
 名字				属性				值
@@ -16145,14 +20409,6 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 ;				Over
 for				function
 ID				Id				i
@@ -16179,7 +20435,7 @@ else				Else
 begin				Start
 while				While
 ID				Id				x
--				Sub
++				Add
 ID				Id				y
 *				Mul
 ID				Id				z
@@ -16206,13 +20462,6 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 end				End
 .				point
 名字				属性				值
@@ -16223,14 +20472,6 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 ;				Over
 for				function
 ID				Id				i
@@ -16257,7 +20498,7 @@ else				Else
 begin				Start
 while				While
 ID				Id				x
--				Sub
++				Add
 ID				Id				y
 *				Mul
 ID				Id				z
@@ -16284,14 +20525,6 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 end				End
 .				point
 名字				属性				值
@@ -16302,14 +20535,6 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 ;				Over
 for				function
 ID				Id				i
@@ -16336,7 +20561,7 @@ else				Else
 begin				Start
 while				While
 ID				Id				x
--				Sub
++				Add
 ID				Id				y
 *				Mul
 ID				Id				z
@@ -16363,14 +20588,6 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 end				End
 .				point
 名字				属性				值
@@ -16381,14 +20598,6 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 ;				Over
 for				function
 ID				Id				i
@@ -16415,7 +20624,7 @@ else				Else
 begin				Start
 while				While
 ID				Id				x
--				Sub
++				Add
 ID				Id				y
 *				Mul
 ID				Id				z
@@ -16442,13 +20651,6 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 end				End
 .				point
 名字				属性				值
@@ -16459,14 +20661,6 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 ;				Over
 for				function
 ID				Id				i
@@ -16493,7 +20687,7 @@ else				Else
 begin				Start
 while				While
 ID				Id				x
--				Sub
++				Add
 ID				Id				y
 *				Mul
 ID				Id				z
@@ -16520,14 +20714,6 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
-else				Else
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 end				End
 .				point
 名字				属性				值
@@ -16538,14 +20724,6 @@ begin				Start
 ID				Id				x
 :=				VL
 INTEGER_VALUE				num				19
-;				Over
-ID				Id				z
-:=				VL
-ID				Id				z
-*				Mul
-INTEGER_VALUE				num				7
-+				Add
-ID				Id				x
 ;				Over
 for				function
 ID				Id				i
@@ -16572,7 +20750,7 @@ else				Else
 begin				Start
 while				While
 ID				Id				x
--				Sub
++				Add
 ID				Id				y
 *				Mul
 ID				Id				z
@@ -16599,5 +20777,13 @@ INTEGER_VALUE				num				7
 +				Add
 ID				Id				x
 end				End
+;				Over
+ID				Id				z
+:=				VL
+ID				Id				z
+*				Mul
+INTEGER_VALUE				num				7
++				Add
+ID				Id				x
 end				End
 .				point

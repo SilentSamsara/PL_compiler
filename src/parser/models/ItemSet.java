@@ -8,8 +8,8 @@ import java.util.*;
  * 这边定义“项目”就是有·符号的产生式，产生式：START->E，则项目就是START->·E
  */
 public class ItemSet {
-	int number;
-	List<Item> items = new ArrayList<Item>();
+	public int number;
+	public List<Item> items = new ArrayList<Item>();
 
 	public ItemSet() {
 
