@@ -76,17 +76,20 @@ public class SLRAnalyserTable {
 								if((terminal.get(location).equals("+")
 									||terminal.get(location).equals("-")
 									)) {
-								ACTION.get(i).get(location).action='r';
-								if(i==44)
-									ACTION.get(i).get(location).number=18;
-								else
-									ACTION.get(i).get(location).number=19;
+									ACTION.get(i).get(location).action='r';
+									if(i==44)
+										ACTION.get(i).get(location).number=18;
+									else
+										ACTION.get(i).get(location).number=19;
 								}else if (terminal.get(location).equals("*")) {
 									ACTION.get(i).get(location).action='s';
 									ACTION.get(i).get(location).number=35;
 								}else if(terminal.get(location).equals("/")) {
 									ACTION.get(i).get(location).action='s';
 									ACTION.get(i).get(location).number=36;
+								}else if(terminal.get(location).equals("^")) {
+									ACTION.get(i).get(location).action='s';
+									ACTION.get(i).get(location).number=37;
 								}
 							}else if ( i == 46 || i == 47 ) {
 								if(terminal.get(location).equals("^")) {
