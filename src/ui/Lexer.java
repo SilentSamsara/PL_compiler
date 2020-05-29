@@ -139,18 +139,5 @@ public class Lexer extends JFrame {
         }
     }
 
-
-//    public static void main(String[] args) throws Exception {
-//    	try {
-//			BeautyEyeLNFHelper.frameBorderStyle=FrameBorderStyle.generalNoTranslucencyShadow;
-//			BeautyEyeLNFHelper.translucencyAtFrameInactive = false;
-//			org.jb2011.lnf.beautyeye.BeautyEyeLNFHelper.launchBeautyEyeLNF();
-//			UIManager.put("ToolBar.isPaintPlainBackground", Boolean.TRUE);
-//			UIManager.put("RootPane.setupButtonVisible", false);
-//		}catch (Exception e) {
-//		}
-//        new MainFrame();
-//
-//    }
 }
 

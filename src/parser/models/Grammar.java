@@ -112,9 +112,6 @@ final public class Grammar {
 					temp++;
 					productions.get(index).rightParts.remove(temp);
 					xString = ":=";
-				}else if(xString.equals("蔚")) {
-					xString = "ε";
-					productions.get(index).rightParts.set(temp, "ε");
 				}
 				if (!non_terminals.contains(xString)&&!terminals.contains(xString)) {
 					// 如果不在非终结符集合中，没有被添加到终结符集合，就将该终结符保存

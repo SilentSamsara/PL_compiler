@@ -1,9 +1,11 @@
 package main;
 
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.*;
 
+import com.sun.applet2.AppletParameters;
 import lexer.*;
 import parser.models.First;
 import parser.models.Follow;
@@ -12,6 +14,7 @@ import parser.models.Lattice;
 import parser.models.Production;
 import parser.models.SLRAnalyserTable;
 import parser.tools.SLRAnalyser;
+import parser.tree.Node;
 import ui.Launcher;
 
 public class SLRParser {
@@ -25,10 +28,13 @@ public class SLRParser {
 	List<String> stack_Message;//栈信息
 	List<String> input_Message;//将输入的词素
 	List<String> action_Message;//动作信息
+	public static String three_address;
 	public static String error = "";
 	/*输出参考display()方法,可考虑输出语法分析表参考SLRAnalyerTable.display_Table()方法*/
 	ArrayList<WordItem> wordItemList;
+	ArrayList<Integer> integers = new ArrayList<>();
 	public SLRParser() {
+		three_address = "";
 		error = "";
 		Launcher.inputMessage = (ArrayList<String>) this.input_Message;
 		//载入文法
@@ -56,12 +62,34 @@ public class SLRParser {
 		stack_Message = new ArrayList<String>();
 		input_Message = new ArrayList<String>();
 		action_Message = new ArrayList<String>();
+		three_address = "";
 		//添加引用
 		Launcher.stackMessage = (ArrayList<String>) stack_Message;
 		Launcher.actionMessage = (ArrayList<String>) action_Message;
 		Launcher.inputMessage = (ArrayList<String>) input_Message;
 		matching();
 		display();
+		Node.error = new ArrayList<>();
+		Node.idTable = new HashMap<>();
+		Node.num = new ArrayList<>();
+		Node.label = 0;
+		Node.temp = 0;
+		try {
+			three_address = root.getCode(root);
+			root.display(0);
+		}catch (Exception e){
+		}
+		Launcher.threeAddress = three_address;
+		FileOutputStream fileOutputStream=null;
+		try {
+			fileOutputStream = new FileOutputStream("./PascalCode/error.txt");
+			for (int i = 0 ; i <Node.error.size() ; i++)
+				fileOutputStream.write((Node.error.get(i)+"\n").getBytes());
+			fileOutputStream.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		System.out.println(three_address);
 		if ( ErrorWriter.errorList.size() != 0 ){
 			error = "词法分析出错:\n";
 			for (int i = 0 ; i < ErrorWriter.errorList.size() ; i++){
@@ -80,6 +108,8 @@ public class SLRParser {
 		for(;i<action_Message.size();i++) {
 			System.out.println(action_Message.get(i));
 		}
+		for (i = 0 ; i<integers.size() ;i++)
+			System.out.println(productions.get(integers.get(i)).getLeftPart()+"->"+productions.get(integers.get(i)).getRightParts());
 	}
 	
 	private static String search(int encode){//搜索关键字所对应的编码
@@ -106,16 +136,17 @@ public class SLRParser {
 		}
 		return error;
 	}
-	
+	Node root;
 	Stack<WordItem> stack = new Stack<WordItem>();
+	Stack<Node> Nodes = new Stack<Node>();
 	boolean matching() {
 		for(int i = wordItemList.size()-1 ; i >= 0 ; i--) {
 			stack.add(wordItemList.get(i));
 		}
 		stack.add(0,new WordItem("$", 131, wordItemList.get(wordItemList.size()-1).line));
 		int s,t;
-		Stack<Integer> cow =new Stack<Integer>();
-		Stack<String> p = new Stack<String>();
+		Stack<Integer> cow =new Stack<Integer>();//项目集栈
+		Stack<String> word = new Stack<String>();//词素栈
 		cow.add(0);
 		WordItem a = wordItemList.get(0);
 		for(;;) {
@@ -123,7 +154,7 @@ public class SLRParser {
 			for(int i=0; i< cow.size() ;i++)
 			{
 				if(i!=0) {
-					string = string + " " + p.get(i-1);
+					string = string + " " + word.get(i-1);
 				}
 				string = string + cow.get(i);
 			}
@@ -146,20 +177,31 @@ public class SLRParser {
 				
 				if (ACTION.get(s).get(terminals.indexOf(get)).getAction() == 's') {
 					cow.push(t);
-					p.push(terminals.get(terminals.indexOf(get)));
+					word.push(terminals.get(terminals.indexOf(get)));
+					Node x = new Node(-1);
+					x.line = a.line;
+					x.encode = a.encode;
+					x.key = a.key;
 					stack.pop();
+					Nodes.push(x);
 					a = stack.peek();
 					string =string + "移进";
 				}else if (ACTION.get(s).get(terminals.indexOf(get)).getAction() == 'r') {
 					int y = ACTION.get(s).get(terminals.indexOf(get)).getNumber() - 1;
-					for(int i = productions.get(y).getRightParts().size() ; i>0 ; i--) {
+					Node out = new Node(y);
+					for(int i = productions.get(y).getRightParts().size() ; i>0 ; i--) {//产生式右部出栈
 						cow.pop();
-						p.pop();
+						word.pop();
+						out.children.add(Nodes.pop());
 					}
+					Collections.reverse(out.children);
+					integers.add(new Integer(y));
+
 					t = cow.peek();
 					String aString = productions.get(y).getLeftPart();
 					cow.push(GOTO.get(t).get(non_terminals.indexOf(aString)).getNumber());
-					p.push(aString);
+					word.push(aString);
+					Nodes.push(out);
 					string = string + "按" +productions.get(y).getLeftPart()+"->"
 							+productions.get(y).getRightParts()+"归约";
 				}
@@ -169,6 +211,7 @@ public class SLRParser {
 					action_Message.add(string+"程序正确");
 					action_Message.add("程序正确");
 //					System.out.println("程序正确");
+					root = Nodes.pop();
 					return true;
 				}else {
 					action_Message.add("出错了，输入的程序有误，请检查程序");

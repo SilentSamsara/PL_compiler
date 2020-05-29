@@ -7,10 +7,11 @@ import parser.models.SLRAnalyserTable;
 import parser.tools.SLRAnalyser;
 
 import javax.swing.*;
+import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 
-public class Listeners implements WindowListener {
+public class Listeners extends WindowAdapter {
     static Launcher launcher;
     static Lexer lexer;
 
@@ -34,38 +35,11 @@ public class Listeners implements WindowListener {
         if (e.getSource().equals(lexer)){
             lexer.getUnit();
             JOptionPane.showMessageDialog(null,"获取记号流成功！");
-            new SymbolStream(lexer.jta_morpheme);
+            Launcher.frames.add(new SymbolStream(lexer.jta_morpheme));
             lexer.hide();
+        }else if (e.getSource().equals(launcher)){  //获得焦点
+            launcher.jta_code.requestFocusInWindow();
         }
     }
 
-    @Override
-    public void windowClosing(WindowEvent e) {
-
-    }
-
-    @Override
-    public void windowClosed(WindowEvent e) {
-
-    }
-
-    @Override
-    public void windowIconified(WindowEvent e) {
-
-    }
-
-    @Override
-    public void windowDeiconified(WindowEvent e) {
-
-    }
-
-    @Override
-    public void windowActivated(WindowEvent e) {
-
-    }
-
-    @Override
-    public void windowDeactivated(WindowEvent e) {
-
-    }
 }

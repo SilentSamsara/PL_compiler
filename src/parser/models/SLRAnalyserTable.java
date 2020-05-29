@@ -70,9 +70,10 @@ public class SLRAnalyserTable {
 						if (ACTION.get(i).get(location).action != 'r' && ACTION.get(i).get(location).action != 's') {
 							ACTION.get(i).get(location).action = 's';
 						} else if (ACTION.get(i).get(location).action == 'r') {
-//							throw new SRException(1);
-							//优先级规则: ^ > *、/ > +、-
-							if ((i == 44 || i == 45)) {
+							//throw new SRException(1);
+							//运算符优先级规则: ^ > *、/ > +、-
+							//if...else.../if... 优先级规则: 当到达if...状态时下一个字符为else则移入，否则规约
+							if ((i == 44 || i == 45)) {//加减法
 								if((terminal.get(location).equals("+")
 									||terminal.get(location).equals("-")
 									)) {
@@ -91,7 +92,7 @@ public class SLRAnalyserTable {
 									ACTION.get(i).get(location).action='s';
 									ACTION.get(i).get(location).number=37;
 								}
-							}else if ( i == 46 || i == 47 ) {
+							}else if ( i == 46 || i == 47 ) {//乘除法
 								if(terminal.get(location).equals("^")) {
 									ACTION.get(i).get(location).action='s';
 									ACTION.get(i).get(location).number=37;
@@ -103,10 +104,10 @@ public class SLRAnalyserTable {
 									ACTION.get(i).get(location).number=21;
 								}
 							}
-							else if(terminal.get(location).equals("^")) {
+							else if(terminal.get(location).equals("^")) {//指数运算
 								ACTION.get(i).get(location).action='s';
 								ACTION.get(i).get(location).number=37;
-							}else if (terminal.get(location).equals("else")) {
+							}else if (terminal.get(location).equals("else")) {//if...else.../if...
 								ACTION.get(i).get(location).action='s';
 								ACTION.get(i).get(location).number=52;/*这里*/
 							}
@@ -116,12 +117,7 @@ public class SLRAnalyserTable {
 							Item k1item = itemFamily.itemsets.get(k).items.get(0);
 							Item ijitem = itemFamily.itemsets.get(i).items.get(j);
 							if (k1item.productionEquals(ijitem) && k1item.point == ijitem.point + 1) {
-								if(ACTION.get(i).get(location).error!=0) {
-									ACTION.get(i).get(location).Action.number = k;
-									System.out.println(k);
-								}
-								else
-									ACTION.get(i).get(location).number = k;
+								ACTION.get(i).get(location).number = k;
 								break;
 							}
 						}
@@ -165,22 +161,22 @@ public class SLRAnalyserTable {
 	public static void display_Table() {
 		System.out.println("\n预测分析表：");
 		for (int i = 0; i < Grammar.terminals.size(); i++) {
-			System.out.print("\t\t" + Grammar.terminals.get(i));
+			System.out.print("\t\t\t" + Grammar.terminals.get(i));
 		}
 		for (int i = 0; i < Grammar.non_terminals.size(); i++) {
-			System.out.print("\t\t" + Grammar.non_terminals.get(i));
+			System.out.print("\t\t\t" + Grammar.non_terminals.get(i));
 		}
 		System.out.println();
 		for (int i = 0; i < ACTION.size(); i++) {
 			System.out.print(i);
 			for (int j = 0; j < ACTION.get(i).size(); j++) {
-				System.out.print("\t\t" + ACTION.get(i).get(j).action + ACTION.get(i).get(j).number);
+				System.out.print("\t\t\t" + ACTION.get(i).get(j).action + ACTION.get(i).get(j).number);
 				if (ACTION.get(i).get(j).error!=0) {
 					System.out.print("/"+ACTION.get(i).get(j).Action.action+ACTION.get(i).get(j).Action.number);
 				}
 			}
 			for (int j = 0; j < GOTO.get(i).size(); j++) {
-				System.out.print("\t\t" + GOTO.get(i).get(j).number);
+				System.out.print("\t\t\t" + GOTO.get(i).get(j).number);
 			}
 			System.out.println();
 		}

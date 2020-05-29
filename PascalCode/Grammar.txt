@@ -14,7 +14,7 @@ ifstmt->if bool then stmt else stmt
 forstmt->for id := expr  to  expr  do  stmt 
 forstmt->for id := expr  downto  expr  do  stmt 
 bool->expr > expr
-bool->expr < expr 
+bool->expr < expr
 expr->expr + expr
 expr->expr - expr
 expr->expr * expr
