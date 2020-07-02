@@ -1,7 +1,14 @@
 <program><Id,test><;>
 <begin>
-<Id,z><:=><Id,y><;>
+<Id,x><:=><num,19><;>
 <for><Id,i><:=><num,100><downto><num,15><do>
-<if><Id,x><<><Id,y><+><num,15><then><Id,y><:=><Id,x>
-<else><Id,z><:=><Id,z><*><num,7><+><Id,x>
+<if><Id,x><<><Id,y><+><(><num,15><-><num,9><)><then>
+<Id,y><:=><Id,x>
+<else><begin>
+<while><Id,x><+><Id,y><*><Id,z><>><Id,x><do>
+<begin>
+<Id,y><:=><Id,y><+><Id,y><^><num,5><-><num,1>
+<end><;>
+<Id,z><:=><Id,z><*><num,7><+><Id,x>
+<end>
 <end><.>

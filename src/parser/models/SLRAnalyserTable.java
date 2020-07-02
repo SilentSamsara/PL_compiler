@@ -103,8 +103,7 @@ public class SLRAnalyserTable {
 									ACTION.get(i).get(location).action='r';
 									ACTION.get(i).get(location).number=21;
 								}
-							}
-							else if(terminal.get(location).equals("^")) {//指数运算
+							}else if(terminal.get(location).equals("^")) {//指数运算
 								ACTION.get(i).get(location).action='s';
 								ACTION.get(i).get(location).number=37;
 							}else if (terminal.get(location).equals("else")) {//if...else.../if...
@@ -161,22 +160,22 @@ public class SLRAnalyserTable {
 	public static void display_Table() {
 		System.out.println("\n预测分析表：");
 		for (int i = 0; i < Grammar.terminals.size(); i++) {
-			System.out.print("\t\t\t" + Grammar.terminals.get(i));
+			System.out.print("\t" + Grammar.terminals.get(i));
 		}
 		for (int i = 0; i < Grammar.non_terminals.size(); i++) {
-			System.out.print("\t\t\t" + Grammar.non_terminals.get(i));
+			System.out.print("\t" + Grammar.non_terminals.get(i));
 		}
 		System.out.println();
 		for (int i = 0; i < ACTION.size(); i++) {
 			System.out.print(i);
 			for (int j = 0; j < ACTION.get(i).size(); j++) {
-				System.out.print("\t\t\t" + ACTION.get(i).get(j).action + ACTION.get(i).get(j).number);
+				System.out.print("\t" + ACTION.get(i).get(j).action + ACTION.get(i).get(j).number);
 				if (ACTION.get(i).get(j).error!=0) {
 					System.out.print("/"+ACTION.get(i).get(j).Action.action+ACTION.get(i).get(j).Action.number);
 				}
 			}
 			for (int j = 0; j < GOTO.get(i).size(); j++) {
-				System.out.print("\t\t\t" + GOTO.get(i).get(j).number);
+				System.out.print("\t" + GOTO.get(i).get(j).number);
 			}
 			System.out.println();
 		}

@@ -49,7 +49,7 @@ public class Node {
             //stmt->id := expr
             code = getCode(now.children.get(2)) + now.children.get(0).key + " = " + now.children.get(2).place;
             if (num.indexOf(now.children.get(2).place) == -1 && idTable.get(now.children.get(2).place) == null)
-                error.add(now.children.get(2).place+"可能未初始化. line: " + now.children.get(2).line);
+                error.add(now.children.get(2).place+"可能未初始化. line: " + now.children.get(2).line ) ;
             idTable.put(now.children.get(0).key,now.children.get(2).place);
         }else if (produce == 6 || produce == 7 || produce == 8){
             //stmt->compoundstmt
@@ -60,10 +60,11 @@ public class Node {
             //stmt->while bool do stmt1
             begin = label();
             code = begin + ":\n" + getCode(now.children.get(1)) + now.children.get(1).bt + ":\n" + getCode(now.children.get(3))
-                    + " goto " + begin + "\n" + now.children.get(1).bf + ":\n";
+                    + "\ngoto " + begin + "\n" + now.children.get(1).bf + ":";
         }else if (produce == 11){
             //ifstmt->if bool then stmt
-            code = getCode(now.children.get(1)) + now.children.get(1).bt + ":\n" + getCode(now.children.get(3)) + "\n" + now.children.get(1).bf + ":\n";
+            code = getCode(now.children.get(1)) + now.children.get(1).bt + ":\n" + getCode(now.children.get(3)) + "\n"
+                    + now.children.get(1).bf + ":\n";
         }else if (produce == 12){
             //ifstmt->if bool then stmt1 else stmt2
             code = getCode(now.children.get(1)) + now.children.get(1).bt + ":\n" + getCode(now.children.get(3))+ "\ngoto ";
@@ -78,11 +79,12 @@ public class Node {
             now.bf =label();
             System.out.println(code);
             code = code + now.children.get(1).key + " = " + now.children.get(3).place + "\n"
-                    + now.begin + ":\nif " + now.children.get(1).key + "<= " + now.children.get(5).place + " goto " + now.bt + "\ngoto " + now.bf
+                    + now.begin + ":\nif " + now.children.get(1).key + " <= " + now.children.get(5).place
+                    + " goto " + now.bt + "\ngoto " + now.bf
                     + "\n" + now.bt + ":\n" + getCode(now.children.get(7)) ;
             String t = temp();
             code = code + t + " = "+ now.children.get(1).key +" + 1\n"+ now.children.get(1).key +" = " + t
-                    +  "\ngoto " + begin + "\n" + now.bf + ":\n";
+                    +  "\ngoto " + now.begin + "\n" + now.bf + ":\n";
             if (num.indexOf(now.children.get(3).place) == -1 && idTable.get(now.children.get(3).place) == null)
                 error.add(now.children.get(3).place + "可能未初始化. line: " + now.children.get(3).line);
             idTable.put(now.children.get(1).key,now.children.get(3).place);
@@ -94,11 +96,11 @@ public class Node {
             now.bt = label();
             now.bf =label();
             code = code + now.children.get(1).key + " = " + now.children.get(3).place + "\n"
-                    + now.begin + ":\nif " + now.children.get(1).key + ">= " + now.children.get(5).place + " goto " + now.bt + "\ngoto " + now.bf
+                    + now.begin + ":\nif " + now.children.get(1).key + " >= " + now.children.get(5).place + " goto " + now.bt + "\ngoto " + now.bf
                     + "\n" + now.bt + ":\n" + getCode(now.children.get(7)) ;
             String t = temp();
             code = code + t + " = "+ now.children.get(1).key +" - 1\n"+ now.children.get(1).key +"= " + t
-                    +  "\ngoto " + begin + "\n" + now.bf + ":\n";
+                    +  "\ngoto " + now.begin + "\n" + now.bf + ":\n";
             if (num.indexOf(now.children.get(3).place) == -1 && idTable.get(now.children.get(3).place) == null)
                 error.add(now.children.get(3).place + "可能未初始化. line: " + now.children.get(3).line);
             idTable.put(now.children.get(1).key,now.children.get(3).place);
@@ -131,6 +133,7 @@ public class Node {
                 error.add(now.children.get(0).place + "可能未初始化. line: " + now.children.get(0).line);
             if (num.indexOf(now.children.get(2).place) == -1 && idTable.get(now.children.get(2).place) == null)
                 error.add(now.children.get(2).place + "可能未初始化. line: " + now.children.get(2).line);
+            code = code + now.place + " = " + now.children.get(0).place + " + " + now.children.get(2).place + "\n";
             idTable.put(now.place,now.children.get(0).place + " + " + now.children.get(2).place);
         }else if (produce == 18){
             //expr->expr1 - expr2
@@ -164,18 +167,24 @@ public class Node {
             idTable.put(now.place,now.children.get(0).place + " + " + now.children.get(2).place);
         }else if (produce == 21){
             //expr->expr1 ^ factor
-            code = getCode(now.children.get(0)) + getCode(now.children.get(2)) ;
+            code = getCode(now.children.get(0)) ;
             now.place = temp();
             if (num.indexOf(now.children.get(0).place) == -1 && idTable.get(now.children.get(0).place) == null)
                 error.add(now.children.get(0).place + "可能未初始化. line: " + now.children.get(0).line);
+            code = code + now.place + " = " + now.children.get(0).place + " ^ " + getCode(now.children.get(2)) + "\n";
             if (num.indexOf(now.children.get(2).place) == -1 && idTable.get(now.children.get(2).place) == null)
-                error.add(now.children.get(2).place + "可能未初始化. line: " + now.children.get(0).line);
-            code = code + now.place + " = " + now.children.get(0).place + " ^ " + now.children.get(2).place + "\n";
+                error.add(now.children.get(2).place + "可能未初始化. line: " + now.children.get(2).line + " ss");
             idTable.put(now.place,now.children.get(0).place + " + " + now.children.get(2).place);
         }else if (produce == 22){
             //expr->factor
-            line = now.children.get(0).line;
-            now.place = now.getCode(now.children.get(0));
+            if (now.children.get(0).productionNum == 25){
+                line = now.children.get(0).line;
+                code = now.getCode(now.children.get(0));
+                now.place = now.children.get(0).place;
+            }else {
+                line = now.children.get(0).line;
+                now.place = now.getCode(now.children.get(0));
+            }
         }else if (produce == 23){
             //factor->id
             line = now.children.get(0).line;
@@ -184,6 +193,7 @@ public class Node {
             //factor->num
             line = now.children.get(0).line;
             code = now.children.get(0).key;
+            now.place = now.children.get(0).key;
             num.add(code);
         }else if (produce == 25){
             //factor->( expr )
