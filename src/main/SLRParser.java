@@ -5,7 +5,6 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.*;
 
-import com.sun.applet2.AppletParameters;
 import lexer.*;
 import parser.models.First;
 import parser.models.Follow;
@@ -20,37 +19,37 @@ import ui.Launcher;
 public class SLRParser {
 	List<List<Lattice>> ACTION;
 	List<List<Lattice>> GOTO;
-	List<First> firsts;//first¼¯
-	List<Follow> follows;//follow¼¯
-	List<String> terminals;//ÖÕ½á·û
-	List<String> non_terminals;//·ÇÖÕ½á·û
-	List<Production> productions;//²úÉúÊ½
-	List<String> stack_Message;//Õ»ĞÅÏ¢
-	List<String> input_Message;//½«ÊäÈëµÄ´ÊËØ
-	List<String> action_Message;//¶¯×÷ĞÅÏ¢
+	List<First> firsts;//firsté›†
+	List<Follow> follows;//followé›†
+	List<String> terminals;//ç»ˆç»“ç¬¦
+	List<String> non_terminals;//éç»ˆç»“ç¬¦
+	List<Production> productions;//äº§ç”Ÿå¼
+	List<String> stack_Message;//æ ˆä¿¡æ¯
+	List<String> input_Message;//å°†è¾“å…¥çš„è¯ç´ 
+	List<String> action_Message;//åŠ¨ä½œä¿¡æ¯
 	public static String three_address;
 	public static String error = "";
-	/*Êä³ö²Î¿¼display()·½·¨,¿É¿¼ÂÇÊä³öÓï·¨·ÖÎö±í²Î¿¼SLRAnalyerTable.display_Table()·½·¨*/
+	/*è¾“å‡ºå‚è€ƒdisplay()æ–¹æ³•,å¯è€ƒè™‘è¾“å‡ºè¯­æ³•åˆ†æè¡¨å‚è€ƒSLRAnalyerTable.display_Table()æ–¹æ³•*/
 	ArrayList<WordItem> wordItemList;
 	ArrayList<Integer> integers = new ArrayList<>();
 	public SLRParser() {
 		three_address = "";
 		error = "";
 		Launcher.inputMessage = (ArrayList<String>) this.input_Message;
-		//ÔØÈëÎÄ·¨
+		//è½½å…¥æ–‡æ³•
 		new SLRAnalyser();
-		//´Ê·¨·ÖÎö
+		//è¯æ³•åˆ†æ
 		File file = new File("./PascalCode/test.pas");
 		ParseWords p = new ParseWords();
 		try {
 			p.doWork(file);
 		} catch (IOException e) {
-			// TODO ×Ô¶¯Éú³ÉµÄ catch ¿é
-			System.out.println("´Ê·¨·ÖÎö³ö´í");
-			error =  "´Ê·¨·ÖÎö³ö´í";
+			// TODO è‡ªåŠ¨ç”Ÿæˆçš„ catch å—
+			System.out.println("è¯æ³•åˆ†æå‡ºé”™");
+			error =  "è¯æ³•åˆ†æå‡ºé”™";
 		}
 		System.out.println();
-		//×¼±¸¹¤×÷
+		//å‡†å¤‡å·¥ä½œ
 		this.ACTION = SLRAnalyserTable.ACTION;
 		this.GOTO = SLRAnalyserTable.GOTO;
 		this.firsts = Grammar.firsts;
@@ -63,7 +62,7 @@ public class SLRParser {
 		input_Message = new ArrayList<String>();
 		action_Message = new ArrayList<String>();
 		three_address = "";
-		//Ìí¼ÓÒıÓÃ
+		//æ·»åŠ å¼•ç”¨
 		Launcher.stackMessage = (ArrayList<String>) stack_Message;
 		Launcher.actionMessage = (ArrayList<String>) action_Message;
 		Launcher.inputMessage = (ArrayList<String>) input_Message;
@@ -91,7 +90,7 @@ public class SLRParser {
 		}
 		System.out.println(three_address);
 		if ( ErrorWriter.errorList.size() != 0 ){
-			error = "´Ê·¨·ÖÎö³ö´í:\n";
+			error = "è¯æ³•åˆ†æå‡ºé”™:\n";
 			for (int i = 0 ; i < ErrorWriter.errorList.size() ; i++){
 				error = error + " " +ErrorWriter.getErrorString(i);
 			}
@@ -112,7 +111,7 @@ public class SLRParser {
 			System.out.println(productions.get(integers.get(i)).getLeftPart()+"->"+productions.get(integers.get(i)).getRightParts());
 	}
 	
-	private static String search(int encode){//ËÑË÷¹Ø¼ü×ÖËù¶ÔÓ¦µÄ±àÂë
+	private static String search(int encode){//æœç´¢å…³é”®å­—æ‰€å¯¹åº”çš„ç¼–ç 
 		for (SortCode sortCode : SymbolTable.sortCodeList){
 			if (sortCode.encode == encode){
 				if (sortCode.word.equals("INTEGER_VALUE")||sortCode.word.equals("FLOAT_VALUE")) {
@@ -145,8 +144,8 @@ public class SLRParser {
 		}
 		stack.add(0,new WordItem("$", 131, wordItemList.get(wordItemList.size()-1).line));
 		int s,t;
-		Stack<Integer> cow =new Stack<Integer>();//ÏîÄ¿¼¯Õ»
-		Stack<String> word = new Stack<String>();//´ÊËØÕ»
+		Stack<Integer> cow =new Stack<Integer>();//é¡¹ç›®é›†æ ˆ
+		Stack<String> word = new Stack<String>();//è¯ç´ æ ˆ
 		cow.add(0);
 		WordItem a = wordItemList.get(0);
 		for(;;) {
@@ -185,11 +184,11 @@ public class SLRParser {
 					stack.pop();
 					Nodes.push(x);
 					a = stack.peek();
-					string =string + "ÒÆ½ø";
+					string =string + "ç§»è¿›";
 				}else if (ACTION.get(s).get(terminals.indexOf(get)).getAction() == 'r') {
 					int y = ACTION.get(s).get(terminals.indexOf(get)).getNumber() - 1;
 					Node out = new Node(y);
-					for(int i = productions.get(y).getRightParts().size() ; i>0 ; i--) {//²úÉúÊ½ÓÒ²¿³öÕ»
+					for(int i = productions.get(y).getRightParts().size() ; i>0 ; i--) {//äº§ç”Ÿå¼å³éƒ¨å‡ºæ ˆ
 						cow.pop();
 						word.pop();
 						out.children.add(Nodes.pop());
@@ -202,30 +201,30 @@ public class SLRParser {
 					cow.push(GOTO.get(t).get(non_terminals.indexOf(aString)).getNumber());
 					word.push(aString);
 					Nodes.push(out);
-					string = string + "°´" +productions.get(y).getLeftPart()+"->"
-							+productions.get(y).getRightParts()+"¹éÔ¼";
+					string = string + "æŒ‰" +productions.get(y).getLeftPart()+"->"
+							+productions.get(y).getRightParts()+"å½’çº¦";
 				}
 				else if(ACTION.get(s).get(terminals.indexOf(get)).getAction()=='a') {
-					string = string + "½ÓÊÜ";
+					string = string + "æ¥å—";
 //					System.out.println(string);
-					action_Message.add(string+"³ÌĞòÕıÈ·");
-					action_Message.add("³ÌĞòÕıÈ·");
-//					System.out.println("³ÌĞòÕıÈ·");
+					action_Message.add(string+"ç¨‹åºæ­£ç¡®");
+					action_Message.add("ç¨‹åºæ­£ç¡®");
+//					System.out.println("ç¨‹åºæ­£ç¡®");
 					root = Nodes.pop();
 					return true;
 				}else {
-					action_Message.add("³ö´íÁË£¬ÊäÈëµÄ³ÌĞòÓĞÎó£¬Çë¼ì²é³ÌĞò");
-//					System.out.println("\t\t³ö´íÁË£¬ÊäÈëµÄ³ÌĞòÓĞÎó£¬Çë¼ì²é³ÌĞò");
-					error = "Óï·¨´íÎó£ºline: "+a.line+" ";
+					action_Message.add("å‡ºé”™äº†ï¼Œè¾“å…¥çš„ç¨‹åºæœ‰è¯¯ï¼Œè¯·æ£€æŸ¥ç¨‹åº");
+//					System.out.println("\t\tå‡ºé”™äº†ï¼Œè¾“å…¥çš„ç¨‹åºæœ‰è¯¯ï¼Œè¯·æ£€æŸ¥ç¨‹åº");
+					error = "è¯­æ³•é”™è¯¯ï¼šline: "+a.line+" ";
 					error = error + getExpected(s, terminals.indexOf(get));
 					break;
 				}
 				action_Message.add(string);
 //				System.out.println(string);
 			} catch (Exception e) {
-				action_Message.add("·ÖÎö³öÏÖ´íÎó£ºÊäÈëµÄ³ÌĞòÖĞ³öÏÖÁËÎÄ·¨²»¿ÉÊ¶±ğµÄ×Ö·û£¬ÆäËäÈ»¿ÉÒÔÍ¨¹ı´Ê·¨·ÖÎö£¬µ«ÎÄ·¨ÖĞ²»´æÔÚ¶ÔÓ¦×Ö·û£¬¹Ê³öÏÖÓï·¨´íÎó¡£");
-				error = error + "·ÖÎö³öÏÖ´íÎó£ºÊäÈëµÄ³ÌĞòÖĞ³öÏÖÁËÎÄ·¨²»¿ÉÊ¶±ğµÄ×Ö·û£¬ÆäËäÈ»¿ÉÒÔÍ¨¹ı´Ê·¨·ÖÎö£¬µ«ÎÄ·¨ÖĞ²»´æÔÚ¶ÔÓ¦×Ö·û£¬¹Ê³öÏÖÓï·¨´íÎó¡£";
-//				System.out.println("\n·ÖÎö³öÏÖ´íÎó£ºÊäÈëµÄ³ÌĞòÖĞ³öÏÖÁËÎÄ·¨²»¿ÉÊ¶±ğµÄ×Ö·û£¬ÆäËäÈ»¿ÉÒÔÍ¨¹ı´Ê·¨·ÖÎö£¬µ«ÎÄ·¨ÖĞ²»´æÔÚ¶ÔÓ¦×Ö·û£¬¹Ê³öÏÖÓï·¨´íÎó¡£");
+				action_Message.add("åˆ†æå‡ºç°é”™è¯¯ï¼šè¾“å…¥çš„ç¨‹åºä¸­å‡ºç°äº†æ–‡æ³•ä¸å¯è¯†åˆ«çš„å­—ç¬¦ï¼Œå…¶è™½ç„¶å¯ä»¥é€šè¿‡è¯æ³•åˆ†æï¼Œä½†æ–‡æ³•ä¸­ä¸å­˜åœ¨å¯¹åº”å­—ç¬¦ï¼Œæ•…å‡ºç°è¯­æ³•é”™è¯¯ã€‚");
+				error = error + "åˆ†æå‡ºç°é”™è¯¯ï¼šè¾“å…¥çš„ç¨‹åºä¸­å‡ºç°äº†æ–‡æ³•ä¸å¯è¯†åˆ«çš„å­—ç¬¦ï¼Œå…¶è™½ç„¶å¯ä»¥é€šè¿‡è¯æ³•åˆ†æï¼Œä½†æ–‡æ³•ä¸­ä¸å­˜åœ¨å¯¹åº”å­—ç¬¦ï¼Œæ•…å‡ºç°è¯­æ³•é”™è¯¯ã€‚";
+//				System.out.println("\nåˆ†æå‡ºç°é”™è¯¯ï¼šè¾“å…¥çš„ç¨‹åºä¸­å‡ºç°äº†æ–‡æ³•ä¸å¯è¯†åˆ«çš„å­—ç¬¦ï¼Œå…¶è™½ç„¶å¯ä»¥é€šè¿‡è¯æ³•åˆ†æï¼Œä½†æ–‡æ³•ä¸­ä¸å­˜åœ¨å¯¹åº”å­—ç¬¦ï¼Œæ•…å‡ºç°è¯­æ³•é”™è¯¯ã€‚");
 //				e.printStackTrace();
 				break;
 				
